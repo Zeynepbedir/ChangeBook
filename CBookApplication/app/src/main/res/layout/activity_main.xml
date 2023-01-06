@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="kaydolClick"
+    tools:context=".view.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="320dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grslogo" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="315dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Email Adresiniz"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/edtSifre"
+        android:layout_width="318dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Şifreniz(En az 6 karakter giriniz)"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <Button
+        android:id="@+id/btn_Kaydol_activity2"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:onClick="girisClick"
+        android:text="giris yap"
+        app:layout_constraintStart_toStartOf="@+id/edtSifre"
+        app:layout_constraintTop_toBottomOf="@+id/edtSifre" />
+
+    <Button
+        android:id="@+id/btn_Kaydol_activity3"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:onClick="kaydolClick"
+        android:text="kaydol"
+        app:layout_constraintEnd_toEndOf="@+id/edtSifre"
+        app:layout_constraintTop_toBottomOf="@+id/edtSifre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
